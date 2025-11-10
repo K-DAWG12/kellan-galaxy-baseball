@@ -6,65 +6,53 @@
   <title>Kellan Galaxy Baseball</title>
   <style>
     body {
-      margin: 0;
-      background: black;
-      color: white;
-      font-family: 'Arial Black', sans-serif;
+      background-color: black;
+      color: #00FF7F;
+      font-family: 'Orbitron', sans-serif;
       text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: radial-gradient(circle at 10% 20%, rgba(57,255,20,0.05), transparent 10%),
-                  radial-gradient(circle at 90% 80%, rgba(255,45,240,0.05), transparent 10%),
-                  black;
+      padding: 50px;
     }
 
     h1 {
+      color: #FF1493;
+      text-shadow: 0 0 20px #FF1493, 0 0 40px #00FF7F;
       font-size: 3em;
-      color: #ff2df0;
-      text-shadow: 0 0 10px #ff2df0, 0 0 25px #ff2df0;
     }
 
     p {
-      color: #39ff14;
-      font-size: 1.2em;
-      text-shadow: 0 0 8px #39ff14;
+      font-size: 1.3em;
+      color: #00FF7F;
+      margin-bottom: 40px;
     }
 
-    .btn {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: linear-gradient(90deg, #39ff14, #ff2df0);
-      color: black;
-      border: none;
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 25px;
+      border: 2px solid #FF1493;
+      color: #FF1493;
+      text-decoration: none;
       border-radius: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 0 15px #39ff14, 0 0 25px #ff2df0;
-      transition: transform 0.2s ease;
+      transition: all 0.3s ease;
+      font-size: 18px;
     }
 
-    .btn:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
-      text-align: center;
-      color: #888;
-      font-size: 0.9em;
+    a:hover {
+      background-color: #00FF7F;
+      color: black;
+      box-shadow: 0 0 25px #FF1493;
     }
   </style>
 </head>
 <body>
-  <h1>KELLAN GALAXY BASEBALL</h1>
+  <h1>Kellan Galaxy Baseball</h1>
   <p>Neon Speed. Galaxy Strength.</p>
-  <button class="btn">Shop Merch</button>
-  <footer>© 2025 Kellan Galaxy Baseball</footer>
+
+  <a href="brand.html">Brand</a>
+  <a href="neoncosmic.html">Neon Cosmic</a>
+  <a href="shop.html">Shop</a> <!-- ✅ This is your shop button -->
+
 </body>
 </html>
+
 
