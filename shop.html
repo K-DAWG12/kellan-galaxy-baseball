@@ -3,116 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kellan Galaxy Shop</title>
+  <title>Kellan Galaxy Baseball | Shop</title>
   <style>
-    @keyframes glowPulse {
-      0% { box-shadow: 0 0 10px #00FF7F; }
-      50% { box-shadow: 0 0 30px #FF1493; }
-      100% { box-shadow: 0 0 10px #00FF7F; }
-    }
-
-    @keyframes shimmer {
-      0% { text-shadow: 0 0 10px #FF1493; color: #FF1493; }
-      50% { text-shadow: 0 0 25px #00FF7F; color: #00FF7F; }
-      100% { text-shadow: 0 0 10px #FF1493; color: #FF1493; }
-    }
-
     body {
       background-color: black;
-      color: #00FF7F;
+      color: #39ff14;
       font-family: 'Orbitron', sans-serif;
       text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      border-bottom: 2px solid #ff1493;
+    }
+
+    header img {
+      width: 100px;
     }
 
     h1 {
-      animation: shimmer 3s infinite;
-      font-size: 2em;
+      color: #ff1493;
+      text-shadow: 0 0 20px #ff1493, 0 0 40px #39ff14;
     }
 
-    .item {
-      border: 2px solid #00FF7F;
-      border-radius: 10px;
+    .shop-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .shop-item {
+      background-color: #111;
+      border: 2px solid #39ff14;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #39ff14;
       margin: 20px;
-      padding: 10px;
-      display: inline-block;
-      width: 220px;
-      background: rgba(255, 255, 255, 0.05);
-      animation: glowPulse 4s infinite;
-      transition: transform 0.3s ease;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .item:hover {
+    .shop-item:hover {
       transform: scale(1.08);
-      box-shadow: 0 0 35px #FF1493;
+      box-shadow: 0 0 30px #ff1493;
     }
 
-    img {
+    .shop-item img {
       width: 100%;
       border-radius: 10px;
     }
 
-    .price {
-      color: #FF1493;
-      font-weight: bold;
-      text-shadow: 0 0 5px #FF1493;
-    }
-
-    .buy-button {
-      display: inline-block;
+    .shop-item h3 {
+      color: #ff1493;
       margin-top: 10px;
+    }
+
+    .price {
+      font-size: 1.2em;
+      color: #39ff14;
+    }
+
+    .button {
+      background-color: #ff1493;
+      border: none;
+      color: black;
       padding: 10px 20px;
-      background-color: #FF1493;
-      color: black;
-      border-radius: 8px;
-      text-decoration: none;
+      margin-top: 10px;
+      border-radius: 10px;
+      cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 0 10px #FF1493;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
 
-    .buy-button:hover {
-      background-color: #00FF7F;
-      box-shadow: 0 0 20px #00FF7F;
+    .button:hover {
+      background-color: #39ff14;
       color: black;
     }
 
-    a {
-      color: #00FF7F;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      font-size: 18px;
-    }
-
-    a:hover {
-      text-shadow: 0 0 10px #FF1493;
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>🌌 Kellan Galaxy Shop 🌌</h1>
 
-  <div class="item">
-    <img src="https://files.oaiusercontent.com/file_0000000071f8722fa2d6d94cd1e2b418" alt="Galaxy Hat">
-    <h3>Galaxy Snapback Hat</h3>
-    <p class="price">$29.99</p>
-    <a href="#" class="buy-button">Buy Now</a>
+  <header>
+    <img src="logo.png" alt="Kellan Galaxy Logo">
+    <h1>Kellan Galaxy Baseball Shop</h1>
+  </header>
+
+  <div class="shop-container">
+    <div class="shop-item">
+      <img src="jersey.png" alt="Galaxy Jersey">
+      <h3>Galaxy Jersey</h3>
+      <p class="price">$75.00</p>
+      <button class="button">Buy Now</button>
+    </div>
+
+    <div class="shop-item">
+      <img src="hoodie.png" alt="Galaxy Hoodie">
+      <h3>Galaxy Hoodie</h3>
+      <p class="price">$60.00</p>
+      <button class="button">Buy Now</button>
+    </div>
+
+    <div class="shop-item">
+      <img src="hat.png" alt="Galaxy Hat">
+      <h3>Galaxy Hat</h3>
+      <p class="price">$30.00</p>
+      <button class="button">Buy Now</button>
+    </div>
   </div>
 
-  <div class="item">
-    <img src="https://files.oaiusercontent.com/file_00000000015071f5b8847e9f0959994f" alt="Galaxy Shirt">
-    <h3>Galaxy Silk Tee</h3>
-    <p class="price">$39.99</p>
-    <a href="#" class="buy-button">Buy Now</a>
-  </div>
+  <footer>
+    © 2025 Kellan Galaxy Baseball — Neon Speed. Galaxy Strength.
+  </footer>
 
-  <div class="item">
-    <img src="https://files.oaiusercontent.com/file_0000000009dc7230ba51b553bb13ba01" alt="Galaxy Hoodie">
-    <h3>Galaxy Hoodie</h3>
-    <p class="price">$59.99</p>
-    <a href="#" class="buy-button">Buy Now</a>
-  </div>
-
-  <a href="index.html">⬅️ Back to Home</a>
 </body>
 </html>
+
